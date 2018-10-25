@@ -54,7 +54,7 @@ Now you can write TypeScript and push the code to the script `foo` in your drive
 
 For example, the script below written in TypeScript:
 
-```
+```typescript
 // test.ts
 
 const names = [
@@ -65,7 +65,9 @@ const names = [
 ];
 
 function print() {
-  names.forEach(name => Logger.log(`${name} ${name}sson`));
+  names
+    .map(name => `${name} ${name}sson`)
+    .forEach(element => Logger.log(element));
 }
 
 ```
@@ -83,14 +85,16 @@ The transpiled code isn't hard to read which means debugging is still fine. For 
 ```js
 var exports = exports || {};
 var module = module || { exports: exports };
-var users = [
+var names = [
     "John",
     "Karen",
     "Anders",
     "Kate"
 ];
 function print() {
-    users.map(function (user) { return user + " " + user + "sson"; }).forEach(function (element) {
+    names.map(function (name) {
+        return name + " " + name + "sson"; 
+    }).forEach(function (element) {
         Logger.log(element);
     });
 }
