@@ -59,7 +59,7 @@ For example, the script below written in TypeScript:
 
 const names = [
   "John",
-  "Kren",
+  "Karen",
   "Anders",
   "Kate",
 ];
