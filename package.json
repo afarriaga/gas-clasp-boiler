@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@google/clasp": "^1.5.3",
+    "@types/google-apps-script": "^0.0.27"
+  },
+  "name": "farmacity-vtex",
+  "version": "0.0.1",
+  "description": "Starter for GAS projects with Clasp",
+  "main": "bundle.js",
+  "author": "afarriaga",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "clasp": "clasp"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.3"
+  }
+}
