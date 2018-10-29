@@ -108,7 +108,38 @@ Add a `.claspignore` file to yor project, for example, if you are planning to ad
 
 # Getting an actual project started
 
-WIP
+You can use the `boiler` branch to get started with a basic structure. Includes the basic files.
+
+
+```
+git clone
+cd my_project
+```
+
+Then you can go and edit the `clasp.json` file and add the id of the script (project) you want to push to.
+
+```
+clasp push --watch
+```
+
+### Publishing the project as library (Optional)
+
+If you are working in re-usable modules you may publish your project as a library by following the following steps:
+
+1. Go into File > Manage Versions
+2. Publish a new version
+3. Share the script and choose anyone with the link
+
+To add the library to another project follow the next steps:
+
+1. Go into Resources > Libraries
+2. Use the script id and input it in the input box, then push Add
+3. Select the version to use
+4. Select identifier, this is an alias to the main method of the library
+
+Use development mode when developing the library to avoid publishing a new version every time you are making changes.
+
+Read more about libraries [here](https://developers.google.com/apps-script/guides/libraries).
 
 # Refs
 
