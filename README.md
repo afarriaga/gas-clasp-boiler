@@ -110,13 +110,12 @@ Add a `.claspignore` file to yor project, for example, if you are planning to ad
 
 You can use the `boiler` branch to get started with a basic structure. Includes the basic files.
 
-
 ```
-git clone
+git clone -b boiler https://github.com/afarriaga/gas-clasp-boiler.git my_project
 cd my_project
 ```
 
-Then you can go and edit the `clasp.json` file and add the id of the script (project) you want to push to.
+Then you can go and edit the `clasp.json` file and add the id of the script (project) you want to push to. Then you can run the watcher and start developing.
 
 ```
 clasp push --watch
