@@ -22,3 +22,9 @@ Describe your porject
 |-- package.json
 `-- yarn.lock
 ```
+
+# Run with
+
+```
+clasp push --watch
+```
